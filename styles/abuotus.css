@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://media1.tenor.com/m/E8Wl04bNsKcAAAAd/washing-machine-rock.gif);
+    background-size: cover;
+    background-position: center center;
+    color: #e0e0e0; /* Светлый текст */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1f1f1f; /* Темный фон для шапки */
+    padding: 20px 0;
+    color: #e0e0e0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.horizontal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+    gap: 30px;
+}
+
+.on-gif-text-container {
+    background-color: #1f1f1fb4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 10px 0 10px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.gif-container {
+    background: url(https://media1.tenor.com/m/essuEjRinhUAAAAd/pc-computer.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1700px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.text-card p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.text-card li {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 50px;
+}
+
+.text-card h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.text-card h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.text-card h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.text-card h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text-card img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    gap: 30px;
+}
+
+header a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+#aboutus {
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+main {
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #272723;
+    color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.problem-info {
+    flex: 2;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.problem-info h3,
+.social-links h3,
+.location h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #7ca15d;
+    text-transform: uppercase;
+}
+
+.problem-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.problem-info a {
+    color: #7ca15d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.problem-info a:hover {
+    color: #9ac973;
+}
+
+.social-links {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #7ca15d;
+}
+
+.social-links i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.location {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.location p {
+    font-size: 18px;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+}
+
+#map {
+    width: 1100px;
+    height: 550px;
+    border-radius: 10px;
+    margin: 10px 0 10px 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+}

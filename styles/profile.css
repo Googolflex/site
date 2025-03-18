@@ -1,0 +1,373 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://media1.tenor.com/m/E8Wl04bNsKcAAAAd/washing-machine-rock.gif);
+    background-size: cover;
+    background-position: center center;
+    color: #e0e0e0; /* Светлый текст */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f; /* Темный фон для шапки */
+    padding: 20px 0;
+    color: #e0e0e0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    gap: 30px;
+}
+
+header a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+#aboutus {
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+@keyframes header-slide {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logout-btn {
+    background-color: #c0392b;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e74c3c;
+}
+
+.admin-panel-btn {
+    background-color: #333;
+    display: none;
+    white-space: nowrap; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-panel-btn:hover {
+    background-color: #555;
+}
+
+main {
+    text-align: center;
+    flex-direction: column;
+    display: flex;  /* Для горизонтального выравнивания элементов */
+    justify-content: center;  /* Выравнивание по центру */
+    align-items: center;  /* Выравнивание по верхнему краю */
+    margin-top: 200px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #bbb;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для контейнера профиля */
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#profile-data {
+    width: 600px;
+}
+
+#delivery-data {
+    width: 500px;
+    height: 580px;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-between;  /* Разделяет элементы на две части */
+    gap: 100px;  /* Расстояние между блоками */
+    width: 100%;
+    margin: 0 auto;  /* Центрирование контейнера */
+}
+
+#spacer-con {
+    gap: 400px;
+}
+
+/* Стили для информации профиля */
+.profile-info {
+    margin: 0 0 0 200px;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#profile-label_con {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.button-container a {
+    color: #e0e0e0;
+    padding: 12px 25px;
+    border-radius: 5px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delivery-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #bbb; /* Светлый цвет для текста */
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444; /* Темная граница */
+    border-radius: 5px;
+    background-color: #1f1f1f; /* Темный фон для полей */
+    color: #ddd; /* Светлый текст */
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #e0e0e0; /* Голубая граница при фокусе */
+    outline: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+}
+
+.input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333; /* Синий цвет для кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Темно-голубой при наведении */
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.orders-table table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+    width: 25%; /* Делим столбцы равномерно */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #030101;
+}
+
+.orders-table th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #272723;
+    color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 200px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.problem-info {
+    flex: 2;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.problem-info h3,
+.social-links h3,
+.location h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #7ca15d;
+    text-transform: uppercase;
+}
+
+.problem-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+    .problem-info a {
+        color: #7ca15d;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .problem-info a:hover {
+        color: #9ac973;
+    }
+
+.social-links {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #7ca15d;
+}
+
+.social-links i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.location {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.location p {
+    font-size: 18px;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+}

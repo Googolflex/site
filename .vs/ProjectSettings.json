@@ -1,0 +1,18 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Default Dark+",
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 1,
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.accessibilitySupport": "off",
+  "php.validate.executablePath": "C:/php/php.exe",
+  "php.debug.executablePath": "C:/php/php.exe",
+  "phpserver.phpPath": "C:/php/php.exe"
+}

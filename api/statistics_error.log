@@ -1,0 +1,10 @@
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "orders_items" не существует
+LINE 4:         LEFT JOIN orders_items o ON p.id = o.product_id
+                          ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "orders_items" не существует
+LINE 4:         LEFT JOIN orders_items o ON p.id = o.product_id
+                          ^
+Database error: SQLSTATE[42703]: Undefined column: 7 ОШИБКА:  столбец o.user_id не существует
+LINE 4:         LEFT JOIN order_items o ON u.id = o.user_id
+                                                  ^
+HINT:  Возможно, предполагалась ссылка на столбец "o.order_id".

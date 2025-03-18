@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://media1.tenor.com/m/E8Wl04bNsKcAAAAd/washing-machine-rock.gif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    color: #e0e0e0; /* Светлый текст */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    border-radius: 10px;
+    text-align: center;
+}
+
+#label-con {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+#label-con p {
+    margin-bottom: 10px;
+    margin-top: 0px; /* Уменьшаем отступ между элементами */
+}
+
+.horizontal_container {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: #1f1f1f; /* Темный фон для шапки */
+    padding: 20px 0;
+    color: #e0e0e0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#shop-label {
+    background-color: transparent;
+    font-size: 30px;
+    margin: 0 0;
+    font-weight: bold;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+#aboutus {
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* Стили для вкладок */
+.tabs {
+    gap: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.tabs button {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.tabs button:hover {
+    background-color: #555;
+}
+
+.tabs button:active {
+    background-color: #666;
+}
+
+/* Стили для содержимого вкладок */
+.tab-content {
+    width: 1200px;
+    padding: 20px;
+    margin: 30px 30px;
+    display: none;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tab-content th{
+    padding: 12px;
+    max-width: 100px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+.tab-content td {
+    max-width: 100px;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+.tab-content th {
+    background-color: #333;
+}
+
+.tab-content button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-content button:hover {
+    background-color: #555;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;  /* Можно изменять по необходимости */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;  /* Позиционируем абсолютно */
+    top: 50%;  /* 50% от высоты окна */
+    left: 50%;  /* 50% от ширины окна */
+    transform: translate(-50%, -50%);
+}
+
+#modal-btn-con {
+    display: flex;
+    justify-content: space-between;  /* Размещение кнопок по краям */
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.modal input, .modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal textarea {
+    height: 100px;
+    resize: none;
+}
+
+.modal button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#close-btn {
+    margin-left: 300px;
+}
+
+.modal button:hover {
+    background-color: #555;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Стили для кнопок действий в таблице */
+button {
+    background-color: #666;
+    color: #e0e0e0;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#del-button {
+    background-color: #c40000;
+}
+
+#del-button:hover {
+    background-color: #ff4d4d;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+button:active {
+    background-color: #999;
+}
+
+
+.chart-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-container h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+    max-width: 100%;
+}

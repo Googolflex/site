@@ -1,0 +1,21 @@
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
+Database error: SQLSTATE[42P01]: Undefined table: 7 ОШИБКА:  отношение "order_item" не существует
+LINE 4:         JOIN order_item oi ON o.id = oi.order_id
+                     ^
