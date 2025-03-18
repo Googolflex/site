@@ -195,8 +195,10 @@ h1 {
 .product-card p {
     color: #e0e0e0;
     font-size: 14px;
+    font-weight: 400;
     margin: 10px 0;
     flex-grow: 1;
+    white-space: wrap;
 }
 
 .product-card b {
