@@ -26,24 +26,29 @@ if (!isset($_SESSION['user_id'])) {
     let minPrice = document.getElementById('min-price').value || 0;
     let maxPrice = document.getElementById('max-price').value || 999999999;
 
+    // Получаем выбранные производители
     let selectedManufacturers = [];
     let manufacturerCheckboxes = document.querySelectorAll('input[name="manufacturer"]:checked');
     manufacturerCheckboxes.forEach(checkbox => {
         selectedManufacturers.push(checkbox.value);
     });
 
+    // Получаем выбранные типы товаров
     let selectedProductTypes = [];
     let productTypeCheckboxes = document.querySelectorAll('input[name="product_type"]:checked');
     productTypeCheckboxes.forEach(checkbox => {
         selectedProductTypes.push(checkbox.value);
     });
 
+    // Формируем URL с параметрами
     let url = `api/products.php?sort=${sort}&min_price=${minPrice}&max_price=${maxPrice}`;
     
+    // Если выбраны производители, добавляем их в параметры
     if (selectedManufacturers.length > 0) {
         url += `&manufacturers=${selectedManufacturers.join(',')}`;
     }
     
+    // Если выбраны типы товаров, добавляем их в параметры
     if (selectedProductTypes.length > 0) {
         url += `&product_types=${selectedProductTypes.join(',')}`;
     }
@@ -119,7 +124,7 @@ async function loadProductTypes() {
 
         window.onload = () => {
             loadProducts();
-            loadManufacturers();
+            loadManufacturers();  // Загружаем список производителей при загрузке страницы
             loadProductTypes();
         };
     </script>

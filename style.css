@@ -197,8 +197,8 @@ h1 {
     font-size: 14px;
     font-weight: 400;
     margin: 10px 0;
-    flex-grow: 1;
     white-space: wrap;
+    flex-grow: 1;
 }
 
 .product-card b {

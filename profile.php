@@ -155,7 +155,7 @@ if (!isset($_SESSION['user_id'])) {
         const deliveryForm = document.getElementById('delivery-form');
 
         function loadProfile() {
-            fetch('/site/api/profile.php', { method: 'POST', credentials: 'same-origin' })
+            fetch('/api/profile.php', { method: 'POST', credentials: 'same-origin' })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -207,7 +207,7 @@ if (!isset($_SESSION['user_id'])) {
         }
 
         function loadDeliveryData() {
-            fetch('/site/api/delivery.php', { method: 'GET', credentials: 'same-origin' })
+            fetch('/api/delivery.php', { method: 'GET', credentials: 'same-origin' })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -254,7 +254,7 @@ if (!isset($_SESSION['user_id'])) {
 
             const deliveryData = { first_name: firstName, last_name: lastName, city, street, phone, postal_code: postalCode };
 
-            fetch('http://localhost/ww/api/delivery.php', {
+            fetch('/api/delivery.php', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(deliveryData)
