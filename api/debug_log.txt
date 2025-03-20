@@ -50,3 +50,11 @@
 {"email":"qwerty@gmail.com","password":"qwerty1"}
 {"email":"qwerty@gmail.com","password":"qwerty1"}
 {"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"liubovsheyda@gmail.com","password":"Teacher_2025 "}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}
+{"email":"qwerty@gmail.com","password":"qwerty1"}

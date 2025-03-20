@@ -9,6 +9,7 @@ body {
     flex-direction: column  ;
     gap: 200px;
     height: 100vh;
+    padding-top: 100px;
     margin: 0 0;
     color: #e0e0e0; /* Светлый текст */
 }
@@ -58,7 +59,7 @@ header a:hover {
     border-radius: 10px;
     padding: 20px;
     width: 100%;
-    margin-top: 700px;
+    margin-top: 70vh;
     max-width: 400px;
     text-align: center;
 }
